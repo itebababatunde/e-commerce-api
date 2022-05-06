@@ -1,0 +1,344 @@
+{"level":"info","message":"::ffff:127.0.0.1 - - [19/Apr/2022:12:29:34 +0000] \"GET / HTTP/1.1\" 200 29 \"-\" \"PostmanRuntime/7.29.0\"\n"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [19/Apr/2022:12:30:41 +0000] \"GET / HTTP/1.1\" 200 29 \"-\" \"PostmanRuntime/7.29.0\"\n"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [19/Apr/2022:12:31:09 +0000] \"GET / HTTP/1.1\" 200 29 \"-\" \"PostmanRuntime/7.29.0\"\n"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [19/Apr/2022:12:31:20 +0000] \"GET / HTTP/1.1\" 200 29 \"-\" \"PostmanRuntime/7.29.0\"\n"}
+2022-04-19T12:45:45.612Z: [32minfo[39m----> spinning up 
+2022-04-19T12:46:27.459Z: [31merror[39m----> uncaughtException: winston is not defined
+ReferenceError: winston is not defined
+    at Object.<anonymous> (/Users/ite/Dev/e-commerce-api/server.js:10:38)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:17:47 
+2022-04-19T12:46:39.729Z: [32minfo[39m----> spinning up 
+2022-04-19T12:46:46.898Z: [32minfo[39m----> spinning up 
+2022-04-19T12:46:56.295Z: [32minfo[39m----> spinning up 
+2022-04-19T12:47:11.128Z: [32minfo[39m----> spinning up 
+2022-04-19T12:47:18.547Z: [32minfo[39m----> ::ffff:127.0.0.1 - - [19/Apr/2022:12:47:18 +0000] "GET / HTTP/1.1" 200 29 "-" "PostmanRuntime/7.29.0"
+ 
+2022-04-19T12:47:56.380Z: [32minfo[39m----> spinning up 
+2022-04-19T12:49:23.884Z: [32minfo[39m----> spinning up 
+2022-04-19T12:50:15.465Z: [32minfo[39m----> spinning up 
+2022-04-19T12:50:25.008Z: [32minfo[39m----> ::ffff:127.0.0.1 - - [19/Apr/2022:12:50:25 +0000] "GET / HTTP/1.1" 200 29 "-" "PostmanRuntime/7.29.0"
+ 
+2022-04-19T12:50:43.810Z: [32minfo[39m----> spinning up 
+2022-04-19T12:50:58.457Z: [32minfo[39m----> ::ffff:127.0.0.1 - - [19/Apr/2022:12:50:58 +0000] "GET / HTTP/1.1" 200 29 "-" "PostmanRuntime/7.29.0"
+ 
+2022-04-19T12:51:30.240Z: [32minfo[39m----> spinning up 
+2022-04-19T12:51:33.471Z: [32minfo[39m----> ::ffff:127.0.0.1 - - [19/Apr/2022:12:51:33 +0000] "GET / HTTP/1.1" 200 29 "-" "PostmanRuntime/7.29.0"
+ 
+2022-04-19T13:00:55.270Z: [32minfo[39m----> spinning up 
+2022-04-19T13:01:18.586Z: [32minfo[39m----> spinning up 
+2022-04-19T13:01:41.782Z: [32minfo[39m----> spinning up 
+2022-04-19T13:01:59.162Z: [32minfo[39m----> spinning up 
+2022-04-19T13:03:24.344Z: [32minfo[39m----> spinning up 
+2022-04-19T13:04:51.674Z: [32minfo[39m----> spinning up 
+2022-04-19T13:05:33.487Z: [32minfo[39m----> spinning up 
+2022-04-19T14:19:52.578Z: [32minfo[39m----> spinning up 
+2022-04-19T14:35:25.895Z: [32minfo[39m----> spinning up 
+2022-04-19T14:35:48.013Z: [32minfo[39m----> spinning up 
+2022-04-19T14:36:15.293Z: [32minfo[39m----> spinning up 
+2022-04-19T15:10:58.056Z: [32minfo[39m----> spinning up 
+2022-04-19T15:11:45.344Z: [32minfo[39m----> spinning up 
+2022-04-19T15:13:03.610Z: [32minfo[39m----> spinning up 
+2022-04-19T15:14:18.004Z: [32minfo[39m----> spinning up 
+2022-04-19T15:17:39.361Z: [32minfo[39m----> spinning up 
+2022-04-19T15:22:00.782Z: [32minfo[39m----> spinning up 
+2022-04-19T15:23:06.915Z: [32minfo[39m----> spinning up 
+2022-04-19T15:23:21.768Z: [32minfo[39m----> spinning up 
+2022-04-19T15:42:23.678Z: [32minfo[39m----> spinning up 
+2022-04-19T15:48:26.055Z: [32minfo[39m----> spinning up 
+2022-04-19T16:00:05.311Z: [32minfo[39m----> spinning up 
+2022-04-19T16:03:00.965Z: [32minfo[39m----> spinning up 
+2022-04-19T16:03:08.172Z: [31merror[39m----> uncaughtException: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+    at NativeConnection.Connection.openUri (/Users/ite/Dev/e-commerce-api/node_modules/mongoose/lib/connection.js:689:11)
+    at Mongoose.createConnection (/Users/ite/Dev/e-commerce-api/node_modules/mongoose/lib/index.js:286:10)
+    at Object.<anonymous> (/Users/ite/Dev/e-commerce-api/config/db.js:17:26)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:17:47 
+2022-04-19T16:03:13.272Z: [32minfo[39m----> spinning up 
+2022-04-19T16:03:20.226Z: [31merror[39m----> uncaughtException: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+    at NativeConnection.Connection.openUri (/Users/ite/Dev/e-commerce-api/node_modules/mongoose/lib/connection.js:689:11)
+    at Mongoose.createConnection (/Users/ite/Dev/e-commerce-api/node_modules/mongoose/lib/index.js:286:10)
+    at Object.<anonymous> (/Users/ite/Dev/e-commerce-api/config/db.js:17:26)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:17:47 
+2022-04-19T16:03:22.045Z: [31merror[39m----> uncaughtException: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+    at NativeConnection.Connection.openUri (/Users/ite/Dev/e-commerce-api/node_modules/mongoose/lib/connection.js:689:11)
+    at Mongoose.createConnection (/Users/ite/Dev/e-commerce-api/node_modules/mongoose/lib/index.js:286:10)
+    at Object.<anonymous> (/Users/ite/Dev/e-commerce-api/config/db.js:17:26)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:17:47 
+2022-04-19T16:10:26.563Z: [31merror[39m----> uncaughtException: options usefindandmodify, usecreateindex are not supported
+MongoParseError: options usefindandmodify, usecreateindex are not supported
+    at parseOptions (/Users/ite/Dev/e-commerce-api/node_modules/mongodb/lib/connection_string.js:280:15)
+    at new MongoClient (/Users/ite/Dev/e-commerce-api/node_modules/mongodb/lib/mongo_client.js:62:63)
+    at /Users/ite/Dev/e-commerce-api/node_modules/mongoose/lib/connection.js:784:16
+    at new Promise (<anonymous>)
+    at NativeConnection.Connection.openUri (/Users/ite/Dev/e-commerce-api/node_modules/mongoose/lib/connection.js:781:19)
+    at Mongoose.createConnection (/Users/ite/Dev/e-commerce-api/node_modules/mongoose/lib/index.js:286:10)
+    at Object.<anonymous> (/Users/ite/Dev/e-commerce-api/config/db.js:18:26)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32) 
+2022-04-19T16:10:49.068Z: [32minfo[39m----> spinning up 
+2022-04-19T16:16:34.916Z: [31merror[39m----> uncaughtException: connection 1 to 13.37.147.229:27017 closed
+MongoNetworkError: connection 1 to 13.37.147.229:27017 closed
+    at Connection.onClose (/Users/ite/Dev/e-commerce-api/node_modules/mongodb/lib/cmap/connection.js:131:19)
+    at TLSSocket.<anonymous> (/Users/ite/Dev/e-commerce-api/node_modules/mongodb/lib/cmap/connection.js:65:46)
+    at TLSSocket.emit (node:events:390:28)
+    at node:net:687:12
+    at TCP.done (node:_tls_wrap:580:7) 
+2022-04-19T16:16:54.063Z: [32minfo[39m----> spinning up 
+2022-04-19T16:17:04.782Z: [32minfo[39m----> spinning up 
+2022-04-19T16:17:22.904Z: [31merror[39m----> uncaughtException: connection 1 to 13.37.147.229:27017 closed
+MongoNetworkError: connection 1 to 13.37.147.229:27017 closed
+    at Connection.onClose (/Users/ite/Dev/e-commerce-api/node_modules/mongodb/lib/cmap/connection.js:131:19)
+    at TLSSocket.<anonymous> (/Users/ite/Dev/e-commerce-api/node_modules/mongodb/lib/cmap/connection.js:65:46)
+    at TLSSocket.emit (node:events:390:28)
+    at node:net:687:12
+    at TCP.done (node:_tls_wrap:580:7) 
+2022-04-19T16:20:09.726Z: [32minfo[39m----> spinning up 
+2022-04-19T16:21:22.994Z: [32minfo[39m----> connection 1 to 13.37.147.229:27017 closed 
+2022-04-19T16:21:23.016Z: [31merror[39m----> uncaughtException: connection 1 to 13.37.147.229:27017 closed
+MongoNetworkError: connection 1 to 13.37.147.229:27017 closed
+    at Connection.onClose (/Users/ite/Dev/e-commerce-api/node_modules/mongodb/lib/cmap/connection.js:131:19)
+    at TLSSocket.<anonymous> (/Users/ite/Dev/e-commerce-api/node_modules/mongodb/lib/cmap/connection.js:65:46)
+    at TLSSocket.emit (node:events:390:28)
+    at node:net:687:12
+    at TCP.done (node:_tls_wrap:580:7) 
+2022-04-19T16:25:50.013Z: [32minfo[39m----> connection 1 to 13.37.147.229:27017 closed 
+2022-04-19T16:25:50.041Z: [31merror[39m----> uncaughtException: connection 1 to 13.37.147.229:27017 closed
+MongoNetworkError: connection 1 to 13.37.147.229:27017 closed
+    at Connection.onClose (/Users/ite/Dev/e-commerce-api/node_modules/mongodb/lib/cmap/connection.js:131:19)
+    at TLSSocket.<anonymous> (/Users/ite/Dev/e-commerce-api/node_modules/mongodb/lib/cmap/connection.js:65:46)
+    at TLSSocket.emit (node:events:390:28)
+    at node:net:687:12
+    at TCP.done (node:_tls_wrap:580:7) 
+2022-04-19T16:30:15.347Z: [32minfo[39m----> spinning up 
+2022-04-19T16:33:49.526Z: [32minfo[39m----> bad auth : Authentication failed. 
+2022-04-19T16:33:49.666Z: [31merror[39m----> uncaughtException: bad auth : Authentication failed.
+MongoServerError: bad auth : Authentication failed.
+    at Connection.onMessage (/Users/ite/Dev/e-commerce-api/node_modules/mongodb/lib/cmap/connection.js:203:30)
+    at MessageStream.<anonymous> (/Users/ite/Dev/e-commerce-api/node_modules/mongodb/lib/cmap/connection.js:63:60)
+    at MessageStream.emit (node:events:390:28)
+    at processIncomingData (/Users/ite/Dev/e-commerce-api/node_modules/mongodb/lib/cmap/message_stream.js:108:16)
+    at MessageStream._write (/Users/ite/Dev/e-commerce-api/node_modules/mongodb/lib/cmap/message_stream.js:28:9)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at MessageStream.Writable.write (node:internal/streams/writable:334:10)
+    at TLSSocket.ondata (node:internal/streams/readable:754:22)
+    at TLSSocket.emit (node:events:390:28) 
+2022-04-19T16:35:10.597Z: [32minfo[39m----> bad auth : Authentication failed. 
+2022-04-19T16:35:10.623Z: [31merror[39m----> uncaughtException: bad auth : Authentication failed.
+MongoServerError: bad auth : Authentication failed.
+    at Connection.onMessage (/Users/ite/Dev/e-commerce-api/node_modules/mongodb/lib/cmap/connection.js:203:30)
+    at MessageStream.<anonymous> (/Users/ite/Dev/e-commerce-api/node_modules/mongodb/lib/cmap/connection.js:63:60)
+    at MessageStream.emit (node:events:390:28)
+    at processIncomingData (/Users/ite/Dev/e-commerce-api/node_modules/mongodb/lib/cmap/message_stream.js:108:16)
+    at MessageStream._write (/Users/ite/Dev/e-commerce-api/node_modules/mongodb/lib/cmap/message_stream.js:28:9)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at MessageStream.Writable.write (node:internal/streams/writable:334:10)
+    at TLSSocket.ondata (node:internal/streams/readable:754:22)
+    at TLSSocket.emit (node:events:390:28) 
+2022-04-19T16:36:05.131Z: [32minfo[39m----> bad auth : Authentication failed. 
+2022-04-19T16:36:05.147Z: [31merror[39m----> uncaughtException: bad auth : Authentication failed.
+MongoServerError: bad auth : Authentication failed.
+    at Connection.onMessage (/Users/ite/Dev/e-commerce-api/node_modules/mongodb/lib/cmap/connection.js:203:30)
+    at MessageStream.<anonymous> (/Users/ite/Dev/e-commerce-api/node_modules/mongodb/lib/cmap/connection.js:63:60)
+    at MessageStream.emit (node:events:390:28)
+    at processIncomingData (/Users/ite/Dev/e-commerce-api/node_modules/mongodb/lib/cmap/message_stream.js:108:16)
+    at MessageStream._write (/Users/ite/Dev/e-commerce-api/node_modules/mongodb/lib/cmap/message_stream.js:28:9)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at MessageStream.Writable.write (node:internal/streams/writable:334:10)
+    at TLSSocket.ondata (node:internal/streams/readable:754:22)
+    at TLSSocket.emit (node:events:390:28) 
+2022-04-19T16:38:20.504Z: [32minfo[39m----> connecting to db 
+2022-04-19T16:38:30.756Z: [32minfo[39m----> spinning up 
+2022-04-19T16:52:33.197Z: [31merror[39m----> uncaughtException: requre is not defined
+ReferenceError: requre is not defined
+    at Object.<anonymous> (/Users/ite/Dev/e-commerce-api/connectDb.js:1:18)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/ite/Dev/e-commerce-api/server.js:9:19)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10) 
+2022-04-19T16:53:53.043Z: [31merror[39m----> uncaughtException: requre is not defined
+ReferenceError: requre is not defined
+    at Object.<anonymous> (/Users/ite/Dev/e-commerce-api/connectDb.js:1:18)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/ite/Dev/e-commerce-api/server.js:9:19)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10) 
+2022-04-19T16:54:22.542Z: [31merror[39m----> uncaughtException: requre is not defined
+ReferenceError: requre is not defined
+    at Object.<anonymous> (/Users/ite/Dev/e-commerce-api/connectDb.js:1:18)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/ite/Dev/e-commerce-api/server.js:9:19)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10) 
+2022-04-19T16:54:46.798Z: [31merror[39m----> uncaughtException: requre is not defined
+ReferenceError: requre is not defined
+    at Object.<anonymous> (/Users/ite/Dev/e-commerce-api/connectDb.js:1:18)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/ite/Dev/e-commerce-api/server.js:9:17)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10) 
+2022-04-19T16:55:43.682Z: [31merror[39m----> uncaughtException: requre is not defined
+ReferenceError: requre is not defined
+    at Object.<anonymous> (/Users/ite/Dev/e-commerce-api/connectDb.js:1:18)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/ite/Dev/e-commerce-api/server.js:9:1)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10) 
+2022-04-19T17:03:32.691Z: [31merror[39m----> uncaughtException: Cannot find module './connectDb'
+Require stack:
+- /Users/ite/Dev/e-commerce-api/app.js
+- /Users/ite/Dev/e-commerce-api/server.js
+Error: Cannot find module './connectDb'
+Require stack:
+- /Users/ite/Dev/e-commerce-api/app.js
+- /Users/ite/Dev/e-commerce-api/server.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/ite/Dev/e-commerce-api/app.js:9:1)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19) 
+2022-04-19T17:04:03.414Z: [31merror[39m----> uncaughtException: Cannot find module './connectDb'
+Require stack:
+- /Users/ite/Dev/e-commerce-api/app.js
+- /Users/ite/Dev/e-commerce-api/server.js
+Error: Cannot find module './connectDb'
+Require stack:
+- /Users/ite/Dev/e-commerce-api/app.js
+- /Users/ite/Dev/e-commerce-api/server.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/ite/Dev/e-commerce-api/app.js:9:1)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19) 
+2022-04-19T17:05:09.336Z: [31merror[39m----> uncaughtException: Cannot find module './connectDb'
+Require stack:
+- /Users/ite/Dev/e-commerce-api/app.js
+- /Users/ite/Dev/e-commerce-api/server.js
+Error: Cannot find module './connectDb'
+Require stack:
+- /Users/ite/Dev/e-commerce-api/app.js
+- /Users/ite/Dev/e-commerce-api/server.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/ite/Dev/e-commerce-api/app.js:9:1)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19) 
+2022-04-19T17:05:25.907Z: [31merror[39m----> uncaughtException: Cannot find module './connectDb'
+Require stack:
+- /Users/ite/Dev/e-commerce-api/app.js
+- /Users/ite/Dev/e-commerce-api/server.js
+Error: Cannot find module './connectDb'
+Require stack:
+- /Users/ite/Dev/e-commerce-api/app.js
+- /Users/ite/Dev/e-commerce-api/server.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/ite/Dev/e-commerce-api/app.js:9:1)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19) 
+2022-04-19T17:07:18.002Z: [31merror[39m----> uncaughtException: Cannot find module './connectDb'
+Require stack:
+- /Users/ite/Dev/e-commerce-api/app.js
+- /Users/ite/Dev/e-commerce-api/server.js
+Error: Cannot find module './connectDb'
+Require stack:
+- /Users/ite/Dev/e-commerce-api/app.js
+- /Users/ite/Dev/e-commerce-api/server.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/ite/Dev/e-commerce-api/app.js:9:1)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19) 
+2022-04-19T17:07:37.726Z: [31merror[39m----> uncaughtException: Cannot find module './connectDb'
+Require stack:
+- /Users/ite/Dev/e-commerce-api/app.js
+- /Users/ite/Dev/e-commerce-api/server.js
+Error: Cannot find module './connectDb'
+Require stack:
+- /Users/ite/Dev/e-commerce-api/app.js
+- /Users/ite/Dev/e-commerce-api/server.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/ite/Dev/e-commerce-api/app.js:9:1)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19) 
