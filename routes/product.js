@@ -10,6 +10,7 @@ const controller = new ProductController(ServiceLocator.productService)
 const router = Router()
 
 router.get('/:id', controller.getProduct)
+router.get('/search/:key', controller.searchProduct)
 router.post(
   '/add',
   requireSignIn,

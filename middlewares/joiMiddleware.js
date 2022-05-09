@@ -5,7 +5,7 @@ import AppError from '../utils/error.js'
  */
 const joiMiddleware = (schema) => {
   return (req, res, next) => {
-    const { error } = schema.validate(req.body)
+    const { error } = schema.validate({ ...req.body, ...req.params })
     if (!error) {
       return next()
     } else {

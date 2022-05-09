@@ -31,10 +31,34 @@ const updateProductSchema = Joi.object({
   quantity: Joi.number().integer().min(1),
   price: Joi.number(),
 })
+
+const createCollectionSchema = Joi.object({
+  name: Joi.string().required(),
+  description: Joi.string().required(),
+})
+const addProductSchema = Joi.object({
+  productId: Joi.string().required(),
+  collectionId: Joi.string().required(),
+})
+
+const getCollectionSchema = Joi.object({
+  collectionId: Joi.string().required(),
+})
+
+const updateCollectionSchema = Joi.object({
+  collectionId: Joi.string().required(),
+  name: Joi.string(),
+  description: Joi.string(),
+})
+
 export {
   signUpSchema,
   loginSchema,
   resetPasswordSchema,
   createProductSchema,
   updateProductSchema,
+  createCollectionSchema,
+  addProductSchema,
+  getCollectionSchema,
+  updateCollectionSchema,
 }

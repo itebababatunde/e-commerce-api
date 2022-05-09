@@ -10,14 +10,21 @@ const CollectionSchema = new mongoose.Schema(
     description: {
       type: String,
       trim: true,
+      required: true,
     },
     image: {
       type: String,
     },
 
-    products: {
+    products: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Product',
+      },
+    ],
+    store: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: 'Product',
+      ref: 'Store',
     },
   },
   { timestamps: true }

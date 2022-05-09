@@ -10,9 +10,9 @@ const errorMiddleWare = async (error, req, res, next) => {
   body.status = 'error'
   body.message = error.message
 
-  if (NODE_ENV === DEVELOPMENT) {
-    body.error = error.stack
-  }
+  // if (NODE_ENV === DEVELOPMENT) {
+  //   body.error = error.stack
+  // }
 
   // if status code is not set, set it to 500
   if (!error.statusCode) {

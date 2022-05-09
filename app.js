@@ -34,7 +34,7 @@ app.use((err, req, res, next) => {
   if (err.name === 'AppError') {
     return err.getErrorResponse(res)
   }
-  app.use(errorMiddleWare)
+  errorMiddleWare(err, req, res, next)
 })
 
 export default app

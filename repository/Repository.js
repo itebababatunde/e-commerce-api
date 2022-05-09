@@ -42,38 +42,31 @@ class Repository {
     await this.model.deleteMany(filter)
   }
 
-  //   async findAndPaginate(
-  //     filter,
-  //     page,
-  //     limit,
-  //     sort
-  //     select: string | null = null
-  //   ): Promise<PaginatedResult<T>> {
-  //     const totalDocuments = await this.model.countDocuments(filter);
-  //     const totalPages = Math.ceil(totalDocuments / limit);
-  //     const currentPage = page;
-  //     const nextPage = page + 1 <= totalPages ? page + 1 : null;
-  //     const prevPage = page - 1 >= 0 ? page - 1 : null;
+  async findAndPaginate(filter, page, limit, sort, select) {
+    const totalDocuments = await this.model.countDocuments(filter)
+    const totalPages = Math.ceil(totalDocuments / limit)
+    const currentPage = page
+    const nextPage = page + 1 <= totalPages ? page + 1 : null
+    const prevPage = page - 1 >= 0 ? page - 1 : null
 
-  //     let query = this.model
-  //       .find(filter)
-  //       .sort(sort)
-  //       .skip((page - 1) * limit)
-  //       .limit(limit);
+    let query = this.model
+      .find(filter)
+      .sort(sort)
+      .skip((page - 1) * limit)
+      .limit(limit)
 
-  //     if (select) query = query.select(select);
+    if (select) query = query.select(select)
 
-  //     const data = await query;
-  //     return {
-  //       totalDocuments,
-  //       totalPages,
-  //       currentPage,
-  //       nextPage,
-  //       prevPage,
-  //       data,
-  //     };
-  //   }
-  // }
+    const data = await query
+    return {
+      totalDocuments,
+      totalPages,
+      currentPage,
+      nextPage,
+      prevPage,
+      data,
+    }
+  }
 }
 
 export default Repository
