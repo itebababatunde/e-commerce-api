@@ -34,8 +34,8 @@ class Repository {
     await this.model.findOneAndDelete(filter)
   }
 
-  async findOneAndUpdate(filter, data) {
-    await this.model.findOneAndUpdate(filter, data)
+  async findByIdAndUpdate(id, update) {
+    await this.model.findByIdAndUpdate(id, update)
   }
 
   async deleteMany(filter) {

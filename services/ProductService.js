@@ -4,7 +4,7 @@ class ProductService {
     this.AppError = AppError
   }
 
-  async makeProduct(store, name, quantity, price, description) {
+  async make(store, name, quantity, price, description) {
     if (!name) {
     }
     if (!quantity) {
@@ -23,6 +23,26 @@ class ProductService {
     })
 
     return product
+  }
+
+  async update(id, update) {
+    const product = await this.productRepository.findByIdAndUpdate(id, update)
+  }
+
+  async fetch(id) {
+    const product = await this.productRepository.findById(id)
+    if (!product) {
+      throw new this.AppError(404, 'This product does not exist')
+    }
+    return product
+  }
+
+  async destroy(store, id) {
+    const product = await this.productRepository.findById(id)
+    if (product.store.toString() != store._id) {
+      throw new this.AppError(400, 'You do not own this product')
+    }
+    await this.productRepository.findByIdAndDelete(id)
   }
 }
 

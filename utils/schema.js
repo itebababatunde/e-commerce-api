@@ -25,4 +25,16 @@ const createProductSchema = Joi.object({
   price: Joi.number(),
 })
 
-export { signUpSchema, loginSchema, resetPasswordSchema, createProductSchema }
+const updateProductSchema = Joi.object({
+  name: Joi.string(),
+  description: Joi.string(),
+  quantity: Joi.number().integer().min(1),
+  price: Joi.number(),
+})
+export {
+  signUpSchema,
+  loginSchema,
+  resetPasswordSchema,
+  createProductSchema,
+  updateProductSchema,
+}

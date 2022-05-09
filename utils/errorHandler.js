@@ -23,7 +23,7 @@ const errorMiddleWare = async (error, req, res, next) => {
     error.message = 'Something went very wrong'
   }
   res.status(error.statusCode).json(body)
-  return
+  return error
 }
 
 export default errorMiddleWare
