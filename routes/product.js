@@ -9,21 +9,21 @@ const controller = new ProductController(ServiceLocator.productService)
 
 const router = Router()
 
-router.get('/:id', controller.getProduct)
-router.get('/search/:key', controller.searchProduct)
+router.get('/:storeId/:productId', controller.getProduct)
+router.get('/:storeId/search/:key', controller.searchProduct)
 router.post(
-  '/add',
+  '/:storeId/add',
   requireSignIn,
   joiMiddleware(createProductSchema),
   controller.createProduct
 )
 router.patch(
-  '/:id',
+  '/:storeId/:productId',
   requireSignIn,
   joiMiddleware(updateProductSchema),
   controller.updateProduct
 )
 
-router.delete('/:id', requireSignIn, controller.deleteProduct)
+router.delete('/:storeId/:productId', requireSignIn, controller.deleteProduct)
 
 export default router

@@ -41,7 +41,7 @@ class ProductController {
 
   async updateProduct(req, res, next) {
     const { name, quantity, price, description } = req.body
-    const { id } = req.params
+    const { productId } = req.params
     var query = {}
     if (name) query.name = name
     if (quantity) query.quantity = quantity
@@ -49,7 +49,7 @@ class ProductController {
     if (description) query.description = description
 
     try {
-      await this.productService.updateProduct(id, query)
+      await this.productService.updateProduct(productId, query)
 
       var data = {}
       var message = 'Update successful'
@@ -61,10 +61,10 @@ class ProductController {
   }
 
   async getProduct(req, res, next) {
-    const { id } = req.params
+    const { productId } = req.params
 
     try {
-      const product = await this.productService.fetchProduct(id)
+      const product = await this.productService.fetchProduct(productId)
 
       var data = {}
       var message = 'Successful'
@@ -77,10 +77,10 @@ class ProductController {
   }
 
   async deleteProduct(req, res, next) {
-    const { id } = req.params
+    const { productId } = req.params
 
     try {
-      await this.productService.destroyProduct(req.user, id)
+      await this.productService.destroyProduct(req.user, productId)
 
       var message = 'Product has been deleted successfully'
 

@@ -13,38 +13,42 @@ const controller = new ProductController(ServiceLocator.productService)
 
 const router = Router()
 router.post(
-  '/create',
+  '/:storeId/create',
   requireSignIn,
   joiMiddleware(createCollectionSchema),
   controller.createCollection
 )
 router.get(
-  '/:collectionId',
+  '/:storeId/:collectionId',
   requireSignIn,
   joiMiddleware(getCollectionSchema),
   controller.getCollection
 )
 
 router.post(
-  '/:collectionId/add-product',
+  '/:storeId/:collectionId/add-product',
   requireSignIn,
   joiMiddleware(addProductSchema),
   controller.addToCollection
 )
 
 router.post(
-  '/:collectionId/remove-product',
+  '/:storeId/:collectionId/remove-product',
   requireSignIn,
   joiMiddleware(addProductSchema),
   controller.removeFromCollection
 )
 
 router.patch(
-  '/:collectionId',
+  '/:storeId/:collectionId',
   requireSignIn,
   joiMiddleware(updateCollectionSchema),
   controller.updateCollection
 )
 
-router.delete('/:collectionId', requireSignIn, controller.deleteCollection)
+router.delete(
+  '/:storeId//:collectionId',
+  requireSignIn,
+  controller.deleteCollection
+)
 export default router
