@@ -17,5 +17,6 @@ const router = Router()
 router.post('/', joiMiddleware(createOrderSchema), controller.createOrder)
 router.get('/:orderId', controller.getOrder)
 router.post('/:orderId', controller.initiateTransction)
+router.post('/webhook', controller.processPaymentUpdate)
 
 export default router

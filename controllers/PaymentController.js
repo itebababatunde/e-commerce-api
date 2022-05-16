@@ -42,9 +42,9 @@ class PaymentController {
       var metadata = {
         custom_fields: [
           {
-            "display_name": 'Invoice ID',
-            "variable_name": 'order',
-            "value": 209,
+            display_name: 'Invoice ID',
+            variable_name: 'order',
+            value: 209,
           },
         ],
         cancel_action: 'https://twitter.com',
@@ -85,6 +85,12 @@ class PaymentController {
     } catch (err) {
       next(err)
     }
+  }
+
+  async processPaymentUpdate(req, res, next) {
+    const event = req.body
+    console.log(event)
+    res.send(200)
   }
 }
 
