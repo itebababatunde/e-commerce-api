@@ -38,6 +38,12 @@ const OrderSchema = new mongoose.Schema(
       type: Number,
       default: 1000,
     },
+    status: {
+      type: String,
+      required: ['true', 'Transaction status is required'],
+      enum: ['PENDING', 'PAID', 'DELIVERED'],
+      default: 'PENDING',
+    },
   },
   { timestamps: true }
 )
@@ -48,6 +54,7 @@ OrderSchema.pre(/^find/, function (next) {
     populate: {
       path: 'id',
       model: 'Product',
+      select: { name: 1, quantity: 1, price: 1 },
     },
   })
   next()

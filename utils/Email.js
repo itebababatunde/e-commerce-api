@@ -34,6 +34,26 @@ class Email {
         console.error(error.response.body)
       })
   }
+  async makePayment() {
+    const html = `<strong>Click <a href='${this.url}'>here</a> to complete your payment</strong>`
+
+    const mailOptions = {
+      from: this.from,
+      to: this.to,
+      subject: 'Complete your payment',
+      html,
+      text: htmlToText.fromString(html),
+    }
+
+    await sgMail
+      .send(mailOptions)
+      .then(() => {
+        console.log('Email sent')
+      })
+      .catch((error) => {
+        console.error(error.response.body)
+      })
+  }
 }
 
 export default Email

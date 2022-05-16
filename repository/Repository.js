@@ -35,7 +35,8 @@ class Repository {
   }
 
   async findByIdAndUpdate(id, update) {
-    await this.model.findByIdAndUpdate(id, update)
+    const data = await this.model.findByIdAndUpdate(id, update, { new: true })
+    return data
   }
 
   async deleteMany(filter) {

@@ -1,25 +1,27 @@
 import mongoose from 'mongoose'
 
-const CartSchema = new mongoose.Schema(
+const TransactionSchema = new mongoose.Schema(
   {
-    items: [
-      {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'CartItem',
-      },
-    ],
+    reference: {
+      type: String,
+    },
+    status: {
+      type: String,
+      required: ['true', 'Transaction status is required'],
+      enum: ['INITIATED', 'FAILURE', 'SUCCESS'],
+      default: 'INITIATED',
+    },
+    authorization_url: {
+      type: String,
+    },
+    order: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Order',
+    },
   },
   { timestamps: true }
 )
 
-CartSchema.pre(/^find/, function (next) {
-  this.populate({
-    path: 'items',
-    select: 'product quantity',
-  })
-  next()
-})
+const TransactionModel = mongoose.model('Transaction', TransactionSchema)
 
-const CartModel = mongoose.model('Cart', CartSchema)
-
-export default CartModel
+export default TransactionModel
