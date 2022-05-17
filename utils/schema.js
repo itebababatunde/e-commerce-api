@@ -63,6 +63,17 @@ const createOrderSchema = Joi.object({
   amount: Joi.number().required(),
 })
 
+const initiateTransactionSchema = Joi.object({
+  email: Joi.string().required(),
+  address: Joi.string().required(),
+  fullname: Joi.string().required(),
+  orderId: Joi.string().required(),
+})
+
+const getOrderSchema = Joi.object({
+  orderId: Joi.string().required(),
+})
+
 export {
   signUpSchema,
   loginSchema,
@@ -74,4 +85,6 @@ export {
   getCollectionSchema,
   updateCollectionSchema,
   createOrderSchema,
+  initiateTransactionSchema,
+  getOrderSchema,
 }

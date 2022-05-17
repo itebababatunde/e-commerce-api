@@ -43,6 +43,13 @@ class Repository {
     await this.model.deleteMany(filter)
   }
 
+  async findOneAndUpdate(filter, update) {
+    const data = await this.model.findOneAndUpdate(filter, update, {
+      new: true,
+    })
+    return data
+  }
+
   async findAndPaginate(filter, page, limit, sort, select) {
     const totalDocuments = await this.model.countDocuments(filter)
     const totalPages = Math.ceil(totalDocuments / limit)

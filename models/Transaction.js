@@ -8,8 +8,8 @@ const TransactionSchema = new mongoose.Schema(
     status: {
       type: String,
       required: ['true', 'Transaction status is required'],
-      enum: ['INITIATED', 'FAILURE', 'SUCCESS'],
-      default: 'INITIATED',
+      enum: ['PENDING', 'SUCCESSFUL', 'FAILED'],
+      default: 'PENDING',
     },
     authorization_url: {
       type: String,

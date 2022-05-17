@@ -68,6 +68,31 @@ class PaymentService {
 
     return transaction
   }
+
+  async updateTransactionStatus(reference) {
+    if (!reference) {
+      throw new this.AppError(400, 'Reference is required')
+    }
+
+    const transaction = await this.transactionRepository.findOneAndUpdate(
+      { reference },
+      {
+        status: 'SUCCESSFUL',
+      }
+    )
+    return transaction
+  }
+
+  async updateOrderStatus(orderId) {
+    if (!orderId) {
+      throw new this.AppError(400, 'orderId is required')
+    }
+
+    const order = await this.orderRepository.findByIdAndUpdate(orderId, {
+      status: 'PAID',
+    })
+    return order
+  }
 }
 
 export default PaymentService

@@ -8,6 +8,7 @@ class PaymentController {
     this.createOrder = this.createOrder.bind(this)
     this.getOrder = this.getOrder.bind(this)
     this.initiateTransction = this.initiateTransction.bind(this)
+    this.processPaymentUpdate = this.processPaymentUpdate.bind(this)
   }
 
   async createOrder(req, res, next) {
@@ -88,9 +89,27 @@ class PaymentController {
   }
 
   async processPaymentUpdate(req, res, next) {
-    const event = req.body
-    console.log(event)
-    res.send(200)
+    const valid = this.paymentDependencies.validateWebhook(req)
+    console.log(valid)
+    if (valid) {
+      const event = req.body
+      var transaction = {}
+      var order = {}
+      try {
+        if (event.event === 'charge.success') {
+          transaction = await this.paymentService.updateTransactionStatus(
+            event.data.reference
+          )
+
+          order = await this.paymentService.updateOrderStatus(transaction.order)
+        }
+        return successResponse(res, 200, 'Payment successful')
+      } catch (err) {
+        next(err)
+      }
+    } else {
+      return successResponse(res, 200, 'Invalid sender')
+    }
   }
 }
 
