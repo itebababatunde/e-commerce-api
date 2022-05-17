@@ -5,7 +5,7 @@ import morgan from 'morgan'
 import cors from 'cors'
 import router from './routes/index.js'
 import bodyparser from 'body-parser'
-import errorMiddleWare from './utils/errorHandler'
+import errorMiddleWare from './utils/errorHandler.js'
 dotenv.config()
 
 app.use(morgan('combined'))
