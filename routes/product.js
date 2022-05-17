@@ -3,7 +3,7 @@ import joiMiddleware from '../middlewares/joiMiddleware.js'
 import { createProductSchema, updateProductSchema } from '../utils/schema.js'
 import ServiceLocator from '../di/serviceLocator.js'
 import ProductController from '../controllers/ProductController.js'
-import { requireSignIn } from '../middlewares/auth'
+import { requireSignIn } from '../middlewares/auth.js'
 
 const controller = new ProductController(ServiceLocator.productService)
 

@@ -6,7 +6,7 @@ import {
   resetPasswordSchema,
 } from '../utils/schema.js'
 import ServiceLocator from '../di/serviceLocator.js'
-import AuthController from '../controllers/AuthController'
+import AuthController from '../controllers/AuthController.js'
 import Email from '../utils/Email.js'
 
 const controller = new AuthController(ServiceLocator.authService, Email)

@@ -1,7 +1,7 @@
 import axios from 'axios'
 import crypto from 'crypto'
 import dotenv from 'dotenv'
-import AppError from '../../utils/error'
+import AppError from '../../utils/error.js'
 dotenv.config()
 const PAYSTACK_SECRET_KEY = process.env.PAYSTACK_SECRET_KEY
 

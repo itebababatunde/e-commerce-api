@@ -8,7 +8,7 @@ import {
 } from '../utils/schema.js'
 import ServiceLocator from '../di/serviceLocator.js'
 import ProductController from '../controllers/ProductController.js'
-import { requireSignIn } from '../middlewares/auth'
+import { requireSignIn } from '../middlewares/auth.js'
 const controller = new ProductController(ServiceLocator.productService)
 
 const router = Router()

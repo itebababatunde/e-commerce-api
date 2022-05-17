@@ -1,8 +1,8 @@
 import { Router } from 'express'
 import authRouter from './auth.js'
 import productRouter from './product.js'
-import collectionRouter from './collection'
-import paymentRouter from './payment'
+import collectionRouter from './collection.js'
+import paymentRouter from './payment.js'
 
 const router = Router()
 

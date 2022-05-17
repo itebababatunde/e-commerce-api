@@ -4,7 +4,7 @@ import { createOrderSchema } from '../utils/schema.js'
 import ServiceLocator from '../di/serviceLocator.js'
 import PaymentController from '../controllers/PaymentController'
 import PaymentDependencies from '../services/Payment/paymentHelper.js'
-import { requireSignIn } from '../middlewares/auth'
+import { requireSignIn } from '../middlewares/auth.js'
 const paymentDependencies = new PaymentDependencies()
 
 const controller = new PaymentController(
