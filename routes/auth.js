@@ -5,7 +5,7 @@ import {
   loginSchema,
   resetPasswordSchema,
 } from '../utils/schema.js'
-import ServiceLocator from '../di/serviceLocator.js'
+import ServiceLocator from '../di/ServiceLocator.js'
 import AuthController from '../controllers/AuthController.js'
 import Email from '../utils/Email.js'
 
